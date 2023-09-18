@@ -4,21 +4,8 @@
     box-sizing: border-box;
 }
 
-.center{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1280px;
-    margin:0 auto;
-    padding:0 2%;
-}
-
-header{
-    padding:20px 0 ;
-}
-
 .menu{
-    width: 50%;
-    text-align: left;
+    align-items: center;
 }
 
 .container{
