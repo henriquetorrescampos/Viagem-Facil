@@ -20,3 +20,58 @@ header{
     width: 50%;
     text-align: left;
 }
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #b3c2f0 0%, #341dca 100%);
+    justify-content: left;
+    align-items: left;
+
+}
+
+.form{
+   padding: 20px;    
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control i {
+   position: absolute;
+   top: 45px;
+   right: 10px; 
+   visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+background-color: #f0f0f0;
+border: 2px solid #f0f0f0;
+font-size: 14px;
+width: 100%;
+border-radius: 10px;
+padding: 10px;
+}
