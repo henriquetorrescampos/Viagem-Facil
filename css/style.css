@@ -3,12 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
-/*
-NÃO CONSIGO ALTERAR O TAMANHO DA LOGO.
-*/
-.logo{ 
-    width: 150px;
-    
+
+.navigation{
+    padding: 20px;
 }
 
 .container{
