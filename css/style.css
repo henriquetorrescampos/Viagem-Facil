@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   }
   
   /* Estilo para o corpo da página */
@@ -77,6 +78,68 @@
     border-radius: 20px;
     background: #e4e4e4;
   }
+  .buttonCriarConta{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(17, 107, 143);
+  }
+
+.buttonCriarConta:houver{
+  background: rgba(17, 107, 143, 0.877);
+}
+
+.wrapper input:focus{
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.terms{
+  margin-top: 0.3rem;
+}
+
+.terms input{
+  height: 2em;
+  width: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.terms label{
+  font-size: 0.7rem;
+}
+.terms a{
+  color: rgb(17, 107, 143);
+  text-decoration: none;
+}
+
+.member{
+  font-size: 0.8rem;
+  margin-top: 1.4rem;
+  color: #636363;
+}
+
+.member a{
+  color: rgb(17, 107, 143);
+  text-decoration: none;
+}
+
+.recover{
+  text-align: center;
+  font-size: 0.7rem;
+  margin: 0.3rem 1.4rem 0 0;
+}
+.recover a{
+  text-decoration: none;
+  color: #464647;
+}
+
+
   
   
 

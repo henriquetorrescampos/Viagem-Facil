@@ -5,16 +5,21 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
    <title>Cadastro - Viagem Fácil</title>
   </head>
    <body class="paginaCadastro">
       <div class="wrapper">
            <h1>Cadastre-se Aqui</h1>
            <form accept="#">
-              <input type="text" placeholder="Seu Nome">
-              <input type="number" placeholder="Seu CPF">
-              <input type="password" placeholder="Senha">
-              <input type="password" placeholder="Digite a senha novamente">
+              <input id="name" type="text" placeholder="Seu Nome">
+              <input id="cpf" type="text" placeholder="Seu CPF">
+              <input id="number" type="text" placeholder="Número de celular">
+              <input id="email" type="email" placeholder="Seu e-mail">
+              <input id="password" type="password" placeholder="Senha">
+              <input id="repassword" type="password" placeholder="Digite a senha novamente">
            </form>
       
           <div class="terms">
@@ -23,11 +28,16 @@
                  <a href="#">termos de uso.</a>
                 </label>
           </div>
-           <button>Criar conta</button>
+           <button class="buttonCriarConta">Criar conta</button>
            <div class="member">
                 Já possui conta ? <a href="login.html">Faca Login</a>
            </div>
-      </div>
-
+      </div> 
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+      <script>
+        $('#cpf').mask('000.000.000-00');
+         $('#number').mask('(00) 0 0000-0000');
+      </script>
     </body>
 </html>
