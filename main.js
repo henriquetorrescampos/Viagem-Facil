@@ -22,3 +22,11 @@ function mostrarSenha1(){
       btnShowPass.classList.replace('bi-eye-slash-fill','bi-eye-fill',)   
   }
 }
+function abrirMenu(){
+    document.getElementById('menuOculto').style.width="250px"
+    document.getElementById('paginaCadastro').style.marginLeft="250px"
+}
+function fecharMenu(){
+    document.getElementById('menuOculto').style.width="0"
+    document.getElementById('paginaCadastro').style.marginLeft="0"
+}

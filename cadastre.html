@@ -12,6 +12,7 @@
    <title>Cadastro - Viagem Fácil</title>
   </head>
    <body class="paginaCadastro">
+      <section id="principalCadastro">
       <div class="wrapper">
            <h1>Cadastre-se Aqui</h1>
            <form accept="#">
@@ -34,6 +35,15 @@
            <div class="member">
                 Já possui conta ? <a href="login.html">Faca Login</a>
            </div>
+           <span class="clickMenuCadastre" style="font-size:30px;cursor:pointer" onclick="abrirMenu()">&#9776;</span>
+           </section>
+               <aside class="menuOculto" id="menuOculto">
+                 <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()">&times</a>
+                 <a href="index.html">Home</a>
+                 <a href="quemSomos.html">Quem Somos</a>
+                 <a href="talkToUs.html">Fale Conosco</a>
+                 <a href="login.html">LOGIN</a> 
+               </aside>
       </div> 
       <script src="main.js"></script>
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
