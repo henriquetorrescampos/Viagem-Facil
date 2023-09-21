@@ -153,7 +153,7 @@
   position: absolute;
   color: #3e3737;
 }
-.senha {
+.senha{
   position: relative;
 }
 
@@ -164,6 +164,30 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
+.senha2{
+  position: relative;
+}
+
+#btn-password1 {
+  position: absolute;
+  right: 20px;
+  top: 41%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.senha3{
+  position: relative;
+}
+
+#btn-repassword {
+  position: absolute;
+  right: 20px;
+  top: 41%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 
   
   
