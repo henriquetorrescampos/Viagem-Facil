@@ -157,13 +157,14 @@
   position: relative;
 }
 
-#btn-password {
+#btn-repassword {
   position: absolute;
   right: 20px;
-  top: 40%;
+  top: 41%;
   transform: translateY(-50%);
   cursor: pointer;
 }
+
 .senha2{
   position: relative;
 }
@@ -180,13 +181,7 @@
   position: relative;
 }
 
-#btn-repassword {
-  position: absolute;
-  right: 20px;
-  top: 41%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
+
 
 
   

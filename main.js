@@ -1,6 +1,6 @@
 function mostrarSenha(){
   let inputPass = document.getElementById('password')
-  let btnShowPass = document.getElementById('btn-password','btn-password1')
+  let btnShowPass = document.getElementById('btn-password1')
 
   if(inputPass.type === 'password'){
       inputPass.setAttribute('type','text')
