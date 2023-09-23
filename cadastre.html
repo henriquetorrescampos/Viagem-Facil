@@ -12,26 +12,26 @@
    <title>Cadastro - Viagem Fácil</title>
   </head>
    <body class="paginaCadastro">
-    <header class="cabeçalho">
-      <div class="logo">
-        <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quemSomos.html">Quem Somos</a></li>
-          <li><a href="talkToUs.html">Fale Conosco</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <ul>
-        <li><a href="login.html">LOGIN</a></li>
-        <li><a href="cadastre.html" class="cadastro">CADASTRO</a></li>
-        </ul>
-      </div>
-    </header>
       <section id="principalCadastro">
       <div class="wrapper">
+        <header class="cabeçalho">
+          <div class="logo">
+            <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="quemSomos.html">Quem Somos</a></li>
+              <li><a href="talkToUs.html">Fale Conosco</a></li>
+            </ul>
+          </nav>
+          <div class="login">
+            <ul>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="cadastre.html" class="cadastro">CADASTRO</a></li>
+            </ul>
+          </div>
+        </header>
            <h1>Cadastre-se Aqui</h1>
            <form accept="#">
               <input id="name" type="text" placeholder="Seu Nome">
@@ -45,30 +45,20 @@
            </form>
           <div class="terms">
                 <input type="checkbox" id="checkbox">
-                <label for="checkbox">Concordo com os
-                 <a href="#">termos de uso.</a>
-                </label>
-          </div>
-           <button class="buttonCriarConta">Criar conta</button>
-           <div class="member">
-                Já possui conta ? <a href="login.html">Faca Login</a>
-           </div>
-           <span class="clickMenuCadastre" style="font-size:30px;cursor:pointer" onclick="abrirMenu()">&#9776;</span>
-           </section>
-               <aside class="menuOculto" id="menuOculto">
-                 <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()">&times</a>
-                 <a href="index.html">Home</a>
-                 <a href="quemSomos.html">Quem Somos</a>
-                 <a href="talkToUs.html">Fale Conosco</a>
-                 <a href="login.html">LOGIN</a> 
-               </aside>
-      </div> 
-      <script src="main.js"></script>
-      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-      <script>
+                <label for="checkbox">Concordo com os <a href="#">termos de uso.</a></label>
+            </div>
+            <button class="buttonCriarConta" onclick="submitForm()">Criar conta</button>
+            <div class="member">
+                Já possui conta? <a href="login.html">Faça Login</a>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
         $('#cpf').mask('000.000.000-00');
-         $('#number').mask('(00) 0 0000-0000');
-      </script>
-    </body>
+        $('#number').mask('(00) 0 0000-0000');
+    </script>
+</body>
 </html>
