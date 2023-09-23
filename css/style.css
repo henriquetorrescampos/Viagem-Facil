@@ -11,45 +11,69 @@
     background-color: #f5f5f5;
     color: #333;
   }
-  
-  /* Estilo para o cabeçalho */
-  .headerHome {
+  .cabeçalho{
     background-color: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 10px; /* Adicione preenchimento ao cabeçalho */
+    justify-content: space-between;
+    align-items: center; /* Centralize o texto no cabeçalho */
+    display: flex;
+    width: 100%;
   }
-    
+  
+  .logo {
+    justify-content: left
+  }
+  /* Estilo para o logo */
+  .logo img {
+    width: auto;
+    max-height:70px;
+    justify-content: left;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   /* Estilo para o menu de navegação */
-  .menu {
-    margin-top: 20px;
+  nav ul {
+    display: flex;
+    list-style: none;
   }
   
-  .menu a {
+  nav li{
+   margin-right: 20px;
+  }
+  
+  header a {
     text-decoration: none;
-    color: #fff;
+    color:white;
     font-weight: bold;
-    margin: 0 10px;
-    transition: color 0.3s;
+    font-size: 140%;
+    font-family:Arial black;
   }
   
-  .menu a:hover {
-    color: #ffcc00;
+  .login ul{
+    display: flex;
+    list-style: none;
+  }
+  
+  .login li{
+    margin-right: 20px;
+  }
+  
+  .cadastro {
+    background-color: white; /* Fundo branco */
+    color: #007bff; /* Texto azul */
+    padding: 10px 10px; /* Espaçamento interno */
+     /* Borda preta de 1px */
+    border-radius: 5px; /* Borda arredondada */
+    text-decoration: none; /* Removendo sublinhado do link */
+    font-size: 120%;
   }
   
   /* Estilo para o conteúdo principal (adapte conforme necessário) */
-  main {
-    padding: 20px;
-  }
   
-  /* Estilo para o rodapé (adapte conforme necessário) */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-
   .wrapper{
     width: 330px;
     padding: 2rem 1rem;
@@ -236,6 +260,18 @@
   position: absolute;
   top: 0;
   left: 20px;
+}
+
+.telaHome{
+  background: #dfe9f5;
+}
+
+.Quemsomos{
+  background: #dfe9f5;
+}
+
+.talktous{
+  background: #dfe9f5;
 }
 
   
