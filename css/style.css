@@ -9,13 +9,32 @@
   
   .cabeçalho{
     background-color: #007bff;
-    padding: 10px; /* Adicione preenchimento ao cabeçalho */
+    /* Adicione preenchimento ao cabeçalho */
+    justify-content: center;
+    text-align: center; /* Centralize o texto no cabeçalho */
+    display: flex;
+    width: 100%;
+  }
+  
+  .cabecalhodesk{
+    padding: 10px;/* Adicione preenchimento ao cabeçalho */
     justify-content: space-between;
     align-items: center; /* Centralize o texto no cabeçalho */
     display: flex;
     width: 100%;
   }
-  
+
+
+  .logomobile{
+    justify-content: center 
+  }
+
+  .logomobile img {
+    width:auto ;
+     max-height:35px;
+     justify-content: center;
+   }
+
   .logo {
     justify-content: left
   }
@@ -270,5 +289,42 @@
   background: #dfe9f5;
 }
 
+@media screen and (max-width: 768px) {
+  .cabecalhodesk{
+    display: none;
+  }
+  .clickMenuCadastre{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size:30px;
+    cursor:pointer;
+    color:#dfe9f5
+  }
   
+  .logomobile{
+    display: block;
+  }
+
+  .menuOculto{
+    display: block;
+  }
+} 
+
+@media screen and (min-width: 768px) {
+  .cabecalhodesk{
+    display: flex;
+  }
   
+  .clickMenuCadastre{
+    display:none;
+  }
+
+  .menuOculto{
+    display: none;
+  }
+
+  .logomobile{
+    display: none;
+  }
+} 
