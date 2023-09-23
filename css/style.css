@@ -21,8 +21,8 @@
   }
   /* Estilo para o logo */
   .logo img {
-    max-width:100% ;
-    height:auto;
+   width:auto ;
+    max-height:70px;
     justify-content: left;
   }
   
