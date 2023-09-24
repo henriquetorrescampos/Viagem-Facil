@@ -23,8 +23,8 @@ function mostrarSenha1(){
   }
 }
 function abrirMenu(){
-    document.getElementById('menuOculto').style.width="250px"
-    document.getElementById('paginaCadastro').style.marginLeft="250px"
+    document.getElementById('menuOculto').style.width="150px"
+    document.getElementById('paginaCadastro').style.marginLeft="150px"
 }
 function fecharMenu(){
     document.getElementById('menuOculto').style.width="0"

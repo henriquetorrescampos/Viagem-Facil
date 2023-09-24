@@ -14,6 +14,9 @@
     text-align: center; /* Centralize o texto no cabeçalho */
     display: flex;
     width: 100%;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
   }
   
   .cabecalhodesk{
@@ -68,6 +71,9 @@
     font-family:Arial black;
   }
   
+  header a:hover{
+    color:#0cc0df
+  }
   .login ul{
     display: flex;
     list-style: none;
@@ -128,7 +134,7 @@
     width: 90%;
     color: #fff;
     cursor: pointer;
-    background: rgb(17, 107, 143);
+    background: #007bff;
   }
 
 .buttonCriarConta:houver{
@@ -234,19 +240,22 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #007bff;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  border-right: 1px solid black;
+ 
+
 }
 
 .menuOculto a{
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 15px;
   text-decoration: none;
-  font-size: 25px;
-  color: #007bff;
+  font-size:100%;
+  color: #fff;
   display: block;
   transition: 0.3;
+  font-family: Arial;
 }
 
 .menuOculto a:hover{
@@ -294,7 +303,7 @@
     display: none;
   }
   .clickMenuCadastre{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 20px;
     font-size:30px;
