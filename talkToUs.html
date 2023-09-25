@@ -12,24 +12,42 @@
    <title>Fale conosco - Viagem Fácil</title>
   </head>
    <body class="talktous">
-    <header class="cabeçalho">
-      <div class="logo">
-        <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quemSomos.html">Quem Somos</a></li>
-          <li><a href="talkToUs.html">Fale Conosco</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <ul>
-        <li><a href="login.html">LOGIN</a></li>
-        <li><a href="cadastre.html" class="cadastro">CADASTRO</a></li>
-        </ul>
-      </div>
-    </header>
-    <h1>OLA2s</h1>
+  <header class="cabeçalho">
+    <div class="logomobile">
+      <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
+    </div>
+    <div class="cabecalhodesk">
+    <div class="logo">
+      <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quemSomos.html">Quem Somos</a></li>
+        <li><a href="talkToUs.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+    <div class="login">
+      <ul>
+      <li><a href="login.html">LOGIN</a></li>
+      <li><a href="cadastre.html" class="cadastro">CADASTRO</a></li>
+      </ul>
+    </div>
+    </div>
+  </header>
+  <span class="clickMenuCadastre" onclick="abrirMenu()">&#9776;</span>
+  <aside class="menuOculto" id="menuOculto">
+    <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()">&times</a>
+    <a href="index.html">Home</a>
+    <a href="quemSomos.html">Quem Somos</a>
+    <a href="talkToUs.html">Fale Conosco</a>
+    <br>
+    <a href="login.html">Login</a>
+    <a href="cadastre.html">Cadastre-se</a>  </aside>
+</div> 
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
    </body>
+   
 </html>

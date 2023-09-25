@@ -6,12 +6,13 @@
   <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css"> 
   <title>Viagem Fácil</title>
-  <style>
-    /* Estilos CSS embutidos podem ser adicionados aqui, se necessário */
-  </style>
 </head>
 <body class="telaHome">
   <header class="cabeçalho">
+    <div class="logomobile">
+      <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
+    </div>
+    <div class="cabecalhodesk">
     <div class="logo">
       <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
     </div>
@@ -28,6 +29,7 @@
       <li><a href="cadastre.html" class="cadastro">CADASTRO</a></li>
       </ul>
     </div>
+    </div>
   </header>
   <main>
     <h3>Sua viagem sera demais</h3>
@@ -37,5 +39,18 @@
   <footer>
     
   </footer>
+  <span class="clickMenuCadastre" onclick="abrirMenu()">&#9776;</span>
+  <aside class="menuOculto" id="menuOculto">
+    <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()">&times</a>
+    <a href="index.html">Home</a>
+    <a href="quemSomos.html">Quem Somos</a>
+    <a href="talkToUs.html">Fale Conosco</a>
+    <br>
+    <a href="login.html">Login</a>
+    <a href="cadastre.html">Cadastre-se</a>
+  </aside> 
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 </body>
 </html>
