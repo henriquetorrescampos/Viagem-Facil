@@ -345,25 +345,75 @@ body {
   padding: 0;
 }
 
+/* Estilo para o container do carrossel */
 .carousel {
   display: flex;
-  justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Suporte para rolagem suave em dispositivos iOS */
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh; 
+  min-height: 50vh;
+  width: 100%;
 }
 
+/* Estilo para cada slide do carrossel */
 .carousel-slide {
-  text-align: center; 
-  margin: 0 20px; 
+  flex: 0 0 auto;
+  text-align: center;
+  scroll-snap-align: center;
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 300px; /* Largura máxima para manter a responsividade */
+  width: 100%;
 }
 
-
+/* Estilo para a imagem dentro do slide */
 .carousel-slide img {
   max-width: 100%;
-  transition: transform 0.5s ease; 
+  height: auto;
+  transition: transform 0.5s ease;
 }
 
+/* Estilo para o título dentro do slide */
 .carousel-slide h3 {
   margin-top: 10px;
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Efeito de hover para o slide */
+.carousel-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Efeito de hover para a imagem */
+.carousel-slide:hover img {
+  transform: scale(1.1);
+}
+
+/* Efeito de hover para o título */
+.carousel-slide:hover h3 {
+  transform: translateY(-10px);
+  color: #007bff;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column; /* Empilhar slides em dispositivos menores */
+    align-items: flex-start;
+  }
+
+  .carousel-slide {
+    max-width: 100%; /* Preencher a largura do contêiner */
+  }
 }
