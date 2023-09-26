@@ -50,6 +50,6 @@ function prevSlide() {
     showSlide(currentIndex);
 }
 
-setInterval(nextSlide, 5000); // Alterna automaticamente a cada 5 segundos
+setInterval(nextSlide, 1000); 
 
 showSlide(currentIndex);
