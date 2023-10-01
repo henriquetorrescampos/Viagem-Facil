@@ -417,3 +417,6 @@ body {
     max-width: 100%; /* Preencher a largura do contêiner */
   }
 }
+.required.error {
+  border: 2px solid red;
+}
