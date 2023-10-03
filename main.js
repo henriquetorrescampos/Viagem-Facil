@@ -53,3 +53,13 @@ function prevSlide() {
 setInterval(nextSlide, 1000); 
 
 showSlide(currentIndex);
+
+const modal = document.querySelector(".modal-container")
+
+function openModal(){
+    modal.classList.add("active")
+}
+
+function closeModal(){
+  modal.classList.remove("active") 
+}
