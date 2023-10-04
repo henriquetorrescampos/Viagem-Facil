@@ -28,7 +28,6 @@
     width: 100%;
   }
 
-
   .logomobile{
     justify-content: center 
   }
@@ -166,7 +165,7 @@
 }
 
 .member{
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   margin-top: 1.4rem;
   color: #636363;
 }
@@ -286,7 +285,7 @@
 }
 
 .telaHome{
-  background: #dfe9f5;
+  background: white;
 }
 
 .Quemsomos{
@@ -414,4 +413,12 @@ body {
   .carousel-slide {
     max-width: 100%; /* Preencher a largura do contêiner */
   }
+}
+
+.terms label{
+  font-size: 0.9rem;
+}
+
+.recover a{
+  font-size: 0.9rem;
 }
