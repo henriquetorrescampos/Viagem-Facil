@@ -412,6 +412,7 @@ transition: 0.5 ease;
   }
 }
 
+
 .required.error {
   border: 2px solid red;
 }
