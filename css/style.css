@@ -28,7 +28,6 @@
     width: 100%;
   }
 
-
   .logomobile{
     justify-content: center 
   }
@@ -166,7 +165,7 @@
 }
 
 .member{
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   margin-top: 1.4rem;
   color: #636363;
 }
@@ -245,8 +244,6 @@
   overflow-x: hidden;
   transition: 0.5s;
   border-right: 1px solid black;
- 
-
 }
 
 .menuOculto a{
@@ -288,7 +285,7 @@
 }
 
 .telaHome{
-  background: #dfe9f5;
+  background: white;
 }
 
 .Quemsomos{
@@ -411,8 +408,6 @@ transition: 0.5 ease;
     max-width: 100%; /* Preencher a largura do contêiner */
   }
 }
-
-
 .required.error {
   border: 2px solid red;
 }

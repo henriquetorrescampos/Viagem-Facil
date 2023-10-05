@@ -53,3 +53,4 @@ function prevSlide() {
 setInterval(nextSlide, 1000); 
 
 showSlide(currentIndex);
+
