@@ -1,0 +1,70 @@
+/* Butão 1 do menu */
+.button1 {
+ cursor: pointer;
+ width: 218px;
+ height: 61px;
+ flex-shrink: 0;
+ border-radius: 10px;
+ border: 1px solid #037CA9;
+ background: white;
+ color: #000;
+ text-align: center;
+ font-family: Lato;
+ font-size: 20px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ 
+ /* Imagem do mapa está ficando em todo o quadrado
+ background: url(/assets/mapa\ 1.png), lightgray 50% / cover no-repeat;
+ */
+ }
+ 
+ /* Butões do Menu */
+.homeButton{
+ width: 1440px;
+ height: 109px;
+ border-radius: 10px;
+ background: white;
+ 
+
+}
+
+/* Butão 2 do menu */
+.button2 {
+ cursor: pointer;
+ width: 218px;
+ height: 61px;
+ flex-shrink: 0;
+ border-radius: 10px;
+ border: 1px solid #037CA9;
+ background: white;
+ color: #000;
+ text-align: center;
+ font-family: Lato;
+ font-size: 20px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+}
+
+/* Butão 3 do menu */
+.button3 {
+ cursor: pointer;
+ width: 218px;
+ height: 61px;
+ flex-shrink: 0;
+ border-radius: 10px;
+ border: 1px solid #037CA9;
+ background: white;
+ color: #000;
+ text-align: center;
+ font-family: Lato;
+ font-size: 20px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ /* 
+ background: url(/assets/avaliacao\ 1.png), lightgray 50% / cover no-repeat;
+ */
+}
