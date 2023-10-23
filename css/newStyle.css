@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Butão 1 do menu */
 .button1 {
  cursor: pointer;
@@ -14,15 +8,17 @@
  border: 1px solid #037CA9;
  background: white;
  color: #000;
- text-align: center;
- font-family: Lato;
+ text-align:end ;
  font-size: 20px;
- font-style: normal;
+  font-style: normal;
  font-weight: 700;
  line-height: normal;
  background-image: url(/assets/mapa\ 1.png);
  background-repeat: no-repeat;
-  }
+ background-position: 0.9%;
+ position: relative;
+ left: 15px;
+}
  
  /* Butões do Menu */
 .homeButton{
@@ -43,14 +39,16 @@
  border: 1px solid #037CA9;
  background: white;
  color: #000;
- text-align: center;
- font-family: Lato;
- font-size: 20px;
+ text-align: end;
+font-size: 20px;
  font-style: normal;
  font-weight: 700;
  line-height: normal;
  background-image: url(/assets/mapa\ 1.png);
  background-repeat: no-repeat;
+ background-position: 0.9%;
+ position: relative;
+ right: -500px;
 }
 
 /* Butão 3 do menu */
@@ -63,14 +61,16 @@
  border: 1px solid #037CA9;
  background: white;
  color: #000;
- text-align: center;
- font-family: Lato;
+ text-align: end;
  font-size: 20px;
  font-style: normal;
  font-weight: 700;
  line-height: normal;
  background-image: url(/assets/avaliacao\ 1.png);
  background-repeat: no-repeat;
+ background-position: 0.9%;
+ position: relative;
+ right: -1000px;
  /* 
  background: url(/assets/avaliacao\ 1.png), lightgray 50% / cover no-repeat;
  */
