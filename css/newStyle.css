@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Butão 1 do menu */
 .button1 {
  cursor: pointer;
@@ -14,11 +20,9 @@
  font-style: normal;
  font-weight: 700;
  line-height: normal;
- 
- /* Imagem do mapa está ficando em todo o quadrado
- background: url(/assets/mapa\ 1.png), lightgray 50% / cover no-repeat;
- */
- }
+ background-image: url(/assets/mapa\ 1.png);
+ background-repeat: no-repeat;
+  }
  
  /* Butões do Menu */
 .homeButton{
@@ -45,6 +49,8 @@
  font-style: normal;
  font-weight: 700;
  line-height: normal;
+ background-image: url(/assets/mapa\ 1.png);
+ background-repeat: no-repeat;
 }
 
 /* Butão 3 do menu */
@@ -63,6 +69,8 @@
  font-style: normal;
  font-weight: 700;
  line-height: normal;
+ background-image: url(/assets/avaliacao\ 1.png);
+ background-repeat: no-repeat;
  /* 
  background: url(/assets/avaliacao\ 1.png), lightgray 50% / cover no-repeat;
  */
