@@ -28,7 +28,6 @@
     width: 100%;
   }
 
-
   .logomobile{
     justify-content: center 
   }
@@ -166,7 +165,7 @@
 }
 
 .member{
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   margin-top: 1.4rem;
   color: #636363;
 }
@@ -245,8 +244,6 @@
   overflow-x: hidden;
   transition: 0.5s;
   border-right: 1px solid black;
- 
-
 }
 
 .menuOculto a{
@@ -288,7 +285,7 @@
 }
 
 .telaHome{
-  background: #dfe9f5;
+  background: white;
 }
 
 .Quemsomos{
@@ -364,14 +361,53 @@ transition: 0.5 ease;
 }
 .carrossel img:hover{
   cursor: pointer;
-  width: 360px;
-  opacity: 1;
-}
-.cabeçalho{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
+  max-width: 300px; /* Largura máxima para manter a responsividade */
+  width: 100%;
 }
 
+/* Estilo para a imagem dentro do slide */
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+/* Estilo para o título dentro do slide */
+.carousel-slide h3 {
+  margin-top: 10px;
+  transition: transform 0.5s ease;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Efeito de hover para o slide */
+.carousel-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Efeito de hover para a imagem */
+.carousel-slide:hover img {
+  transform: scale(1.1);
+}
+
+/* Efeito de hover para o título */
+.carousel-slide:hover h3 {
+  transform: translateY(-10px);
+  color: #007bff;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column; /* Empilhar slides em dispositivos menores */
+    align-items: flex-start;
+  }
+
+  .carousel-slide {
+    max-width: 100%; /* Preencher a largura do contêiner */
+  }
+}
+.required.error {
+  border: 2px solid red;
+}
