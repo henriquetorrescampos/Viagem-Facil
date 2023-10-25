@@ -25,8 +25,7 @@
  width: 100%;
  height: 109px;
  border-radius: 10px;
- background: #f5f5f5;
- 
+ background: #f5f5f5;  
 }
 
 /* Butão 2 do menu */
@@ -75,3 +74,62 @@ font-size: 20px;
  background: url(/assets/avaliacao\ 1.png), lightgray 50% / cover no-repeat;
  */
 }
+.buttonh1 {
+    cursor: pointer;
+    width: 218px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #037CA9;  
+    background: white;
+    color: #000;
+    text-align:end ;
+    font-size: 20px;
+     font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-image: url(/assets/curtidas.png);
+    background-repeat: no-repeat;
+    background-position: 0.9%;
+    position: relative;
+    left: 15px;
+   }
+   .buttonh2 {
+    cursor: pointer;
+    width: 218px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #037CA9;
+    background: white;
+    color: #000;
+    text-align:end ;
+    font-size: 20px;
+     font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-image: url(/assets/notifi.jpg);
+    background-repeat: no-repeat;
+    background-position: 0.9%;
+    position: relative;
+    left: 15px;
+   }
+   .buttonh3 {
+    cursor: pointer;
+    width: 218px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #037CA9;
+    background: black;
+    color: white;
+    text-align:end ;
+    font-size: 20px;
+     font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+    background-repeat: no-repeat;
+    background-position: 0.9%;
+    position: relative;
+    left: 15px;
+   }
