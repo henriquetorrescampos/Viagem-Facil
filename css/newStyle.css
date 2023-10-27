@@ -81,14 +81,13 @@ font-size: 20px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #037CA9;  
-    background: white;
-    color: #000;
+    background: #037CA9;
+    color:white;
     text-align:end ;
     font-size: 20px;
      font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background-image: url(/assets/curtidas.png);
     background-repeat: no-repeat;
     background-position: 0.9%;
     position: relative;
@@ -101,14 +100,13 @@ font-size: 20px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #037CA9;
-    background: white;
-    color: #000;
+    background: #037CA9;
+    color: white;
     text-align:end ;
     font-size: 20px;
      font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background-image: url(/assets/notifi.jpg);
     background-repeat: no-repeat;
     background-position: 0.9%;
     position: relative;
@@ -121,7 +119,7 @@ font-size: 20px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #037CA9;
-    background: black;
+    background: #037CA9;
     color: white;
     text-align:end ;
     font-size: 20px;
@@ -132,4 +130,13 @@ font-size: 20px;
     background-position: 0.9%;
     position: relative;
     left: 15px;
+   }
+   .menuHeader{
+    text-align: end;
+   }
+   footer{
+    background-color: #037CA9;
+   }
+   .imagens{
+    text-align: end;
    }
