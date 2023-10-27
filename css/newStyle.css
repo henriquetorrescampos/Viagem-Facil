@@ -10,7 +10,7 @@
  color: #000;
  text-align:end ;
  font-size: 20px;
-  font-style: normal;
+font-style: normal;
  font-weight: 700;
  line-height: normal;
  background-image: url(/assets/mapa\ 1.png);
@@ -39,7 +39,7 @@
  background: white;
  color: #000;
  text-align: end;
-font-size: 20px;
+ font-size: 20px;
  font-style: normal;
  font-weight: 700;
  line-height: normal;
@@ -79,13 +79,30 @@ font-size: 20px;
     width: 218px;
     height: 61px;
     flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid #037CA9;  
-    background: #037CA9;
-    color:white;
-    text-align:end ;
+    border: none; 
+    background: none; 
+    color: #000;
+    text-align: end;
     font-size: 20px;
-     font-style: normal;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-repeat: no-repeat;
+    background-position: 0.9%;
+    position: relative;
+    left: 15px;
+  }
+.buttonh2 {
+    cursor: pointer;
+    width: 218px;
+    height: 61px;
+    flex-shrink: 0;
+    border: none;
+    background: none;
+    color: #000;
+    text-align:end;
+    font-size: 20px;
+    font-style: normal;
     font-weight: 700;
     line-height: normal;
     background-repeat: no-repeat;
@@ -93,37 +110,18 @@ font-size: 20px;
     position: relative;
     left: 15px;
    }
-   .buttonh2 {
+
+.buttonh3 {
     cursor: pointer;
     width: 218px;
     height: 61px;
     flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid #037CA9;
-    background: #037CA9;
-    color: white;
+    border: none;
+    background: none;
+    color: #000;
     text-align:end ;
     font-size: 20px;
-     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background-repeat: no-repeat;
-    background-position: 0.9%;
-    position: relative;
-    left: 15px;
-   }
-   .buttonh3 {
-    cursor: pointer;
-    width: 218px;
-    height: 61px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid #037CA9;
-    background: #037CA9;
-    color: white;
-    text-align:end ;
-    font-size: 20px;
-     font-style: normal;
+    font-style: normal;
     font-weight: 700;
     line-height: normal;    
     background-repeat: no-repeat;
@@ -131,13 +129,25 @@ font-size: 20px;
     position: relative;
     left: 15px;
    }
-   .menuHeader{
+.menuHeader{
     text-align: end;
-   }
-   footer{
+}
+footer{
     background-color: #037CA9;
     color: white;
-   }
-   .imagens{
+}
+.imagens{
     text-align: end;
-   }
+}
+
+.logoHome{
+    width: 185px;
+    height: 185px;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: auto;
+    margin-top: -90px;
+    position: relative;
+    
+    
+}
