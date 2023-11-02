@@ -87,10 +87,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  background-image: url(/assets/HEART.png);
   background-repeat: no-repeat;
   background-position: 0.9%;
   position: relative;
-  left: 15px;
 }
 .buttonh2 {
   cursor: pointer;
@@ -105,34 +105,37 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  background-image: url(/assets/NOTES.png);
   background-repeat: no-repeat;
   background-position: 0.9%;
   position: relative;
-  left: 15px;
 }
 
 .buttonh3 {
   cursor: pointer;
-  width: 218px;
-  height: 61px;
+  width: 150px;
+  height: 40px;
   flex-shrink: 0;
-  border: solid;
-  border-radius: 10px;
-  background: black;
-  color: white;
-  text-align: center;
-  font-size: 20px;
+  fill: #1d1b1b;
+  stroke-width: 1px;
+  stroke: #000;
+  mix-blend-mode: darken;
+  box-shadow: 0px 4px 4px 0 px rgba(0, 0, 0, 0.25) inset;
+  color: #fafdfe;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background-repeat: no-repeat;
-  background-position: 0.9%;
-  position: relative;
-  left: 15px;
+  border-radius: 107px;
+  background-color: #000;
+  border: none;
+  border: solid;
 }
+
 .menuHeader {
   text-align: end;
 }
+
 footer {
   background-color: #037ca9;
   color: white;
