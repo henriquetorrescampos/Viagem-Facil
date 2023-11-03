@@ -414,6 +414,6 @@ body {
   }
 
   .carousel-slide {
-    max-width: 100%; /* Preencher a largura do contêiner */
+    max-width: 100px; /* Preencher a largura do contêiner */
   }
 }
