@@ -1,151 +1,61 @@
-/* Butão 1 do menu */
-.button1 {
-  cursor: pointer;
-  width: 218px;
-  height: 61px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  border: 1px solid #037ca9;
-  background: white;
-  color: #000;
-  text-align: end;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background-image: url(/assets/mapa\ 1.png);
-  background-repeat: no-repeat;
-  background-position: 0.9%;
-  position: relative;
-  left: 15px;
+.home-cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
 }
 
-/* Butões do Menu */
-.homeButton {
-  width: 100%;
-  height: 109px;
-  border-radius: 10px;
-  background: #f5f5f5;
+.home-buttons {
+  width: 1255px;
 }
 
-/* Butão 2 do menu */
-.button2 {
-  cursor: pointer;
-  width: 218px;
-  height: 61px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  border: 1px solid #037ca9;
-  background: white;
-  color: #000;
-  text-align: end;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background-image: url(/assets/mapa\ 1.png);
-  background-repeat: no-repeat;
-  background-position: 0.9%;
-  position: relative;
-  right: -500px;
+.home-buttons-cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: end;
+  margin-right: 12px;
 }
 
-/* Butão 3 do menu */
-.button3 {
-  cursor: pointer;
-  width: 218px;
-  height: 61px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  border: 1px solid #037ca9;
-  background: white;
-  color: #000;
-  text-align: end;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background-image: url(/assets/avaliacao\ 1.png);
-  background-repeat: no-repeat;
-  background-position: 0.9%;
-  position: relative;
-  right: -1000px;
-  /* 
- background: url(/assets/avaliacao\ 1.png), lightgray 50% / cover no-repeat;
- */
-}
-.buttonh1 {
-  cursor: pointer;
-  width: 218px;
-  height: 61px;
-  flex-shrink: 0;
-  border: none;
-  background: none;
-  color: #000;
-  text-align: end;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background-image: url(/assets/HEART.png);
-  background-repeat: no-repeat;
-  background-position: 0.9%;
-  position: relative;
-}
-.buttonh2 {
-  cursor: pointer;
-  width: 218px;
-  height: 61px;
-  flex-shrink: 0;
-  border: none;
-  background: none;
-  color: #000;
-  text-align: end;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background-image: url(/assets/NOTES.png);
-  background-repeat: no-repeat;
-  background-position: 0.9%;
-  position: relative;
+.home-logo {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.buttonh3 {
-  cursor: pointer;
-  width: 150px;
+.favorite-home {
+  font-size: 16px;
+  color: #000;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 20px;
+}
+
+.home-notification {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 20px;
+}
+
+.home-button-login {
+  background-color: #000;
+  width: 107px;
   height: 40px;
   flex-shrink: 0;
-  fill: #1d1b1b;
   stroke-width: 1px;
   stroke: #000;
   mix-blend-mode: darken;
-  box-shadow: 0px 4px 4px 0 px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 15px;
+  border-style: solid;
   color: #fafdfe;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border-radius: 107px;
-  background-color: #000;
-  border: none;
-  border: solid;
-}
-
-.menuHeader {
-  text-align: end;
-}
-
-footer {
-  background-color: #037ca9;
-  color: white;
-}
-.imagens {
-  text-align: end;
-}
-
-.logoHome {
-  margin-top: -90px;
-  width: 200px;
-  height: auto;
 }
