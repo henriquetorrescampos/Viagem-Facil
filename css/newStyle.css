@@ -1,28 +1,11 @@
-.home-cabecalho {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-}
-
-.home-buttons {
-  width: 1255px;
-}
-
 .home-buttons-cabecalho {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: end;
-  margin-right: 12px;
-}
-
-.home-logo {
-  display: flex;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: baseline;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
 }
 
 .favorite-home {
