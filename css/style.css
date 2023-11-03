@@ -1,0 +1,139 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(/Fontes/Lato-Bold\ -\ Copia.ttf) format('truetype');
+  /* Outros formatos de fonte podem ser adicionados aqui */
+}
+
+
+.botao{
+  display: flex;
+  width: 218px;
+  height: 61px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #037CA9;
+
+background: #FFF;
+}
+
+.botao img{
+  width: 36px;
+height: 36px;
+flex-shrink: 0;
+}
+
+.contbotao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  flex: 1 0 0;
+}
+.botao a{
+ display: inline;
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  max-width: 125px;
+  
+}
+
+  .botao:hover{
+      cursor: pointer
+  }
+
+.sem-quebra {
+  white-space: nowrap;
+}
+
+.gbotoes{
+  display: flex;
+padding: 20px 0px;
+justify-content: center;
+align-items: center;
+gap: 318px;
+align-self: stretch;
+  background: #F5F5F5; 
+  width: 100%;
+}
+
+.cabecalho{
+  display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 686px;
+}
+
+.cabecalho img{
+width: 127px;
+height: 99px;
+}
+
+.sessaocabecalho{
+display: flex;
+align-items: flex-start;
+gap: 21px;
+}
+
+.sessaocabecalho img{
+width: 39.328px;
+height: 39px;
+}
+
+.sessaocabecalho a{
+  color: #000;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.botcabecalho{
+  display: flex;
+align-items: center;
+gap: 9px;
+}
+
+.fazerlogin{
+  display: flex;
+width: 107.9px;
+height: 39px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 10px;
+background: #000;
+}
+
+.fazerlogin a{
+  color: #FAFDFE;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+header{
+  display: flex;
+padding: 33px 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 53px;
+flex-shrink: 0;
+}

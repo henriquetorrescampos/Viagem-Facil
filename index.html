@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/newStyle.css" />
-    <title>Viagem Fácil</title>
-  </head>
-  <body>
-    <section class="home-cabecalho">
-      <a class="home-logo" href="./index.html">
-        <img width="185" height="185" src="./assets/logo_viajem_facil.png" />
-      </a>
-      <div class="home-buttons-cabecalho">
-        <a class="home-button" href="./destinosMaisEscolhidos.html"
-          >Destinos Favoritos</a
-        >
-        <a class="home-button" href="./notification.html">Notificações</a>
-        <button class="home-button-login">Fazer Login</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Acesso - Viagem Fácil</title>
+   </head> 
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <img src="assets/Logovetorizada.svg" class="logo">
+      <div class="sessaocabecalho">
+        <div class="botcabecalho">
+          <img src="assets/coracao 1.png">
+          <a>Destinos favoritos</a>
+        </div>
+
+        <div class="botcabecalho">
+          <img src="assets/packard-bell 1.png">
+          <a>Notificações</a>
+        </div>
+
+        <div class="fazerlogin">
+          <a>Fazer login</a>
+        </div>
+
       </div>
-    </section>
-  </body>
+    </div>
+    
+    <div class="gbotoes">
+      <div class="botao" onclick="redirectToLink('https://www.google.com')">
+        <div class="contbotao">
+          <img src="assets/mapa 1.png">
+          <a >Destinos mais escolhidos</a>
+        </div>
+      </div>
+
+      <div class="botao" onclick="redirectToLink('https://www.google.com')">
+        <div class="contbotao">
+          <img src="assets/mapa 1.png">
+          <a >Roteiros <span class="sem-quebra"> pré-definidos</span></a>
+        </div>
+      </div>
+
+      <div class="botao" onclick="redirectToLink('https://www.google.com')">
+        <div class="contbotao">
+          <img src="assets/avaliacao 1.png">
+          <a >Feedback <span class="sem-quebra">dos clientes</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
 </html>
