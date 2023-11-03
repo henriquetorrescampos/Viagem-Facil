@@ -1,12 +1,60 @@
+.home-cabecalho {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
 .home-buttons-cabecalho {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: baseline;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
+  justify-content: flex-end;
+  margin-right: 100px;
+  margin-top: -130px;
 }
+Destinos favoritos
+Notificações
+Fazer Login
+Destinos mais
+ escolhidos 
+Roteiros Pré-definidos
+Feedback 
+dos clientes
+DESBRAVE OS CAMINHOS
+ENCONTRE OS MELHORES ROTEIROS
+Diga-nos para onde você quer viajar e criaremos o roteiro perfeito
+Desfrute do Réveillon com Roteiros Personalizados e Velozes:
+Deixe o nosso sistema inteligente criar um roteiro sob medida para a sua celebração de
+Réveillon. Em apenas alguns minutos, considerando suas preferências e interesses,
+você terá um itinerário  completo. 
+Descubra seus próximos destinos de férias com os melhores roteiros:
+Rio de Janeiro Brasil 
+OrlandoFlórida
+Gramado, RSBrasil
+Sobre o Viagem Fácil
+Explorar
+Baixe o aplicativo
+
+Quem somos
+Avalie-nos
+Aplicativo para Android
+Termos de uso
+Política de privacidade e cookies
+Permissão para instalação de cookies
+Mapa do site
+Como o site funciona
+Fale conosco
+Fale Conosco
+Inclua o destino
+Aplicativo para Iphone
+Cadastre-se
+Escolha dos viajantes
+Sustentabilidade Ambiental
+Suporte Central
+Leia Artigos de Viagem
+© 2023 Viagem Fácil LLC Todos os direitos reservados.
 
 .favorite-home {
   font-size: 16px;
