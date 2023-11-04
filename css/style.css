@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url(/Fontes/Lato-Bold\ -\ Copia.ttf) format('truetype');
+  src: url(/Fontes) format('truetype');
   /* Outros formatos de fonte podem ser adicionados aqui */
 }
 
@@ -130,10 +130,75 @@ line-height: normal;
 
 header{
   display: flex;
-padding: 33px 0px;
+height: 279px;
+padding-top: 39px;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+}
+
+.cpa{
+display: flex;
+height: 343px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 53px;
+gap: 69px;
 flex-shrink: 0;
+background-color: #037CA9;
+background-image: url(fundo.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size:auto
+}
+
+.tittle{
+color: #FFF;
+text-align: center;
+font-family: Lato;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.sub{
+  color: #FFF;
+text-align: center;
+font-family: Lato;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.chamada{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.cpa input{
+display: flex;
+width: 731px;
+height: 43px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+flex-shrink: 0;
+border-radius: 10px;
+background: #FFF;
+background-image: url(loc.png);
+background-repeat: no-repeat;
+background-size: 43px;
+color: #000;
+font-family: Lato;
+font-size: 20px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+padding-left: 43px;
 }
