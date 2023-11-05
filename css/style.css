@@ -249,3 +249,20 @@ header {
   font-size: 22px;
   font-weight: 100;
 }
+
+.bons-destinos {
+  width: 1324px;
+  height: 329px;
+  flex-shrink: 0;
+}
+
+.bons-destinos-text {
+  width: 699px;
+  margin-top: 20px;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
