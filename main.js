@@ -30,53 +30,28 @@ function fecharMenu() {
   document.getElementById("menuOculto").style.width = "0";
   document.getElementById("paginaCadastro").style.marginLeft = "0";
 }
+
 const carousel = document.querySelector(".carousel");
-const slides = document.querySelectorAll(".carousel-slide");
+const carouselItems = document.querySelectorAll(".carousel-item");
+const prevButton = document.querySelector(".prev-button");
+const nextButton = document.querySelector(".next-button");
 let currentIndex = 0;
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.style.transform = `translateX(${100 * (i - index)}%)`;
-  });
-}
-
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
-}
-
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  showSlide(currentIndex);
-}
-
-setInterval(nextSlide, 1000);
-
-showSlide(currentIndex);
-
-document.addEventListener("DOMContentLoaded", function () {
-  const carousel = document.querySelector(".carousel");
-  const carouselItems = document.querySelectorAll(".carousel-item");
-  const prevButton = document.querySelector(".prev-button");
-  const nextButton = document.querySelector(".next-button");
-  let currentIndex = 0;
-
-  function goToSlide(index) {
-    if (index < 0) {
-      index = carouselItems.length - 1;
-    } else if (index >= carouselItems.length) {
-      index = 0;
-    }
-    currentIndex = index;
-    const translateX = -currentIndex * 100;
-    carousel.style.transform = `translateX(${translateX}%)`;
+prevButton.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
   }
-
-  prevButton.addEventListener("click", () => {
-    goToSlide(currentIndex - 1);
-  });
-
-  nextButton.addEventListener("click", () => {
-    goToSlide(currentIndex + 1);
-  });
 });
+
+nextButton.addEventListener("click", () => {
+  if (currentIndex < carouselItems.length - 1) {
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+function updateCarousel() {
+  const offset = -currentIndex * 300; // 300px de largura para cada item
+  carousel.style.transform = `translateX(${offset}px)`;
+}
