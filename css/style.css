@@ -209,18 +209,18 @@ header {
 
 .frame4 {
   width: 100vw;
-  height: 385px;
+  height: 364px;
   flex-shrink: 0;
   border-radius: 10px;
   background: #f5f5f5;
 }
 
 .frame3 {
-  width: 100%;
+  width: 100vw;
   height: 364px;
   background-image: url(/assets/neve_canada.jpg);
   background-repeat: no-repeat;
-  background-size: 442px 367px;
+  background-size: 442px 364px;
   background-position: right;
 }
 
