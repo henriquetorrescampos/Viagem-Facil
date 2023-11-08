@@ -335,7 +335,6 @@ header {
 
 .footer-home {
   display: flex;
-  width: 1440px;
   height: 373px;
   padding: 6px 33px;
   flex-direction: column;
@@ -423,7 +422,7 @@ header {
 
 .footer-chamada {
   color: #fdf9f9;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -434,7 +433,7 @@ header {
 .footer-subchamada {
   color: #fff;
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -444,7 +443,7 @@ header {
 .footer-chamada-final {
   color: #fff;
   text-align: right;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -453,12 +452,11 @@ header {
 }
 
 .footer-texto-final {
-  position: absolute;
-  left: 446px;
+  right: 50px;
   bottom: 0px;
   color: #fff;
+  font-family: "Lato", sans-serif;
   text-align: center;
-  font-family: Lato;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
