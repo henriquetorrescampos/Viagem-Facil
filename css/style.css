@@ -376,6 +376,10 @@ header {
   gap: 10px;
 }
 
+.frame37 a {
+  text-decoration: none;
+}
+
 .frame35 {
   display: flex;
   flex-direction: column;
