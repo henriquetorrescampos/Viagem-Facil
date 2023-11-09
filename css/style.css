@@ -295,6 +295,10 @@ header {
   border-radius: 10px;
   background: url(/assets/rio_imagem.png);
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+.imagem-1:active {
+  background-color: steelblue;
 }
 
 .imagem-2 {
@@ -442,6 +446,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration-line: underline;
 }
 
 .footer-chamada-final {
