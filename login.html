@@ -1,97 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <title>Acesso - Viagem Fácil</title>
-  <style>
-    .error {
-      border: 1px solid red;
-    }
-  </style>
-</head>
-<body class="paginaCadastro">
-  <header class="cabecalho">
-    <div class="logomobile">
-      <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
-    </div>
-    <div class="cabecalhodesk">
-      <div class="logo">
-        <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quemSomos.html">Quem Somos</a></li>
-          <li><a href="talkToUs.html">Fale Conosco</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <ul>
-          <li><a href="login.html">LOGIN</a></li>
-          <li><a href="cadastre.html" class="cadastro">CADASTRO</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <div class="wrapper">
-    <h1>Acesse sua conta</h1>
-    <form accept="#">
-      <input id="cpf" type="text" class="required" placeholder="Seu CPF">
-      <div class="senha">
-        <input id="password" type="password" class="required" placeholder="Senha">
-        <i class="bi bi-eye-fill" id="btn-password1" onclick="mostrarSenha()"></i>
-      </div>
-      <div class="recover">
-        <a href="#">Esqueceu a senha?</a>
-      </div>
-    </form>
-    <button class="buttonCriarConta" onclick="validarForm()">Acessar conta</button>
-    <div class="member">
-      Não possui conta? <a href="./cadastre.html">Crie sua conta</a>
-    </div>
-  </div>
-  <span class="clickMenuCadastre" onclick="abrirMenu()">&#9776;</span>
-  <aside class="menuOculto" id="menuOculto">
-    <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()">&times</a>
-    <a href="index.html">Home</a>
-    <a href="quemSomos.html">Quem Somos</a>
-    <a href="talkToUs.html">Fale Conosco</a>
-    <br>
-    <a href="login.html">Login</a>
-    <a href="cadastre.html">Cadastre-se</a>
-  </aside>
-  <script src="main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-  <script>
-    $('#cpf').mask('000.000.000-00');
-  </script>
-  <script>
-    function validarForm() {
-      var camposObrigatorios = document.querySelectorAll('.required');
-      var formValido = true;
-
-      camposObrigatorios.forEach(function (campo) {
-        if (campo.value.trim() === '') {
-          campo.classList.add('error');
-          formValido = false;
-        } else {
-          campo.classList.remove('error');
-        }
-      });
-
-      if (!formValido) {
-        alert('Preencha todos os campos obrigatórios em vermelho.');
-      } else {
-        // O formulário está válido, você pode enviar os dados ou fazer o que for necessário aqui.
-        
-        alert('Formulário válido. Não há ação de envio configurada.');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>Acesso - Viagem Fácil</title>
+    <style>
+      .error {
+        border: 1px solid red;
       }
-    }
-  </script>
-</body>
+    </style>
+  </head>
+  
+  <body class="paginaCadastro">
+          <div class="wrapper">
+        <h1>Acesse sua conta</h1>
+        <form accept="#">
+          <input id="cpf" type="text" class="required" placeholder="Seu CPF" />
+          <div class="senha">
+            <input
+              id="password"
+              type="password"
+              class="required"
+              placeholder="Senha"
+            />
+            <i
+              class="bi bi-eye-fill"
+              id="btn-password1"
+              onclick="mostrarSenha()"
+            ></i>
+          </div>
+          <div class="recover">
+            <a href="#">Esqueceu a senha?</a>
+          </div>
+        </form>
+        <button class="buttonCriarConta" onclick="validarForm()">
+          Acessar conta
+        </button>
+        <div class="member">
+          Não possui conta? <a href="./cadastre.html">Crie sua conta</a>
+        </div>
+      </div>
+    </div>
+    <span class="clickMenuCadastre" onclick="abrirMenu()">&#9776;</span>
+    <aside class="menuOculto" id="menuOculto">
+      <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()"
+        >&times</a
+      >
+      <a href="index.html">Home</a>
+      <a href="quemSomos.html">Quem Somos</a>
+      <a href="talkToUs.html">Fale Conosco</a>
+      <br />
+      <a href="login.html">Login</a>
+      <a href="cadastre.html">Cadastre-se</a>
+    </aside>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+      $("#cpf").mask("000.000.000-00");
+    </script>
+    <script>
+      function validarForm() {
+        var camposObrigatorios = document.querySelectorAll(".required");
+        var formValido = true;
+
+        camposObrigatorios.forEach(function (campo) {
+          if (campo.value.trim() === "") {
+            campo.classList.add("error");
+            formValido = false;
+          } else {
+            campo.classList.remove("error");
+          }
+        });
+
+        if (!formValido) {
+          alert("Preencha todos os campos obrigatórios em vermelho.");
+        } else {
+          // O formulário está válido, você pode enviar os dados ou fazer o que for necessário aqui.
+
+          alert("Formulário válido. Não há ação de envio configurada.");
+        }
+      }
+    </script>
+  </body>
 </html>
