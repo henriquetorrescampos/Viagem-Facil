@@ -1,104 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>Cadastro - Viagem Fácil</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <title>Cadastro - Viagem Fácil</title>
-</head>
-
-<body class="paginaCadastro">
-  <header class="cabecalho">
-    <div class="logomobile">
-      <a href="index.html"><img width="100" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a>
-    </div>
-    <div class="cabecalhodesk">
-      <div class="logo">
-        <a href="index.html"><img width="100" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quemSomos.html">Quem Somos</a></li>
-          <li><a href="talkToUs.html">Fale Conosco</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <ul>
-          <li><a href="login.html">LOGIN</a></li>
-          <li><a href="cadastre.html" class="cadastro">CADASTRO</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <section id="principalCadastro">
-    <div class="wrapper">
-      <h1>Cadastre-se Aqui</h1>
-      <form id="cadastroForm">
-        <input id="name" type="text" name="nome" class="required" placeholder="Seu Nome">
-        <input id="cpf" type="text" name="cpf" class="required" placeholder="Seu CPF">
-        <input id="dataNascimento" type="date" name="dataNascimento" class="required" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="(this.type='text')">
-        <input id="number" type="tel" name="numeroCelular" class="required" placeholder="Número de celular">
-        <input id="email" type="email" name="email" class="required" placeholder="Seu e-mail">
-        <div class="senha2">
-          <input id="password" type="password" name="senha" placeholder="Senha">
-          <i class="bi bi-eye-fill" id="btn-password1" onclick="mostrarSenha()"></i>
+  <body class="paginaCadastro">
+    <section id="principalCadastro">
+      <div class="wrapper">
+        <h1>Cadastre-se Aqui</h1>
+        <form id="cadastroForm">
+          <input
+            id="name"
+            type="text"
+            name="nome"
+            class="required"
+            placeholder="Seu Nome"
+          />
+          <input
+            id="cpf"
+            type="text"
+            name="cpf"
+            class="required"
+            placeholder="Seu CPF"
+          />
+          <input
+            id="dataNascimento"
+            type="date"
+            name="dataNascimento"
+            class="required"
+            placeholder="Data de Nascimento"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+          />
+          <input
+            id="number"
+            type="tel"
+            name="numeroCelular"
+            class="required"
+            placeholder="Número de celular"
+          />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="required"
+            placeholder="Seu e-mail"
+          />
+          <div class="senha2">
+            <input
+              id="password"
+              type="password"
+              name="senha"
+              placeholder="Senha"
+            />
+            <i
+              class="bi bi-eye-fill"
+              id="btn-password1"
+              onclick="mostrarSenha()"
+            ></i>
+          </div>
+          <div class="senha3">
+            <input
+              id="repassword"
+              type="password"
+              name="repetirSenha"
+              placeholder="Digite a senha novamente"
+            />
+            <i
+              class="bi bi-eye-fill"
+              id="btn-repassword"
+              onclick="mostrarSenha1()"
+            ></i>
+          </div>
+        </form>
+        <div class="terms">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox"
+            >Concordo com os
+            <a
+              id="termosUso"
+              href="./assets/Politica de uso - Viagem fácil.pdf"
+              target="_blank"
+              >termos de uso.</a
+            >
+          </label>
         </div>
-        <div class="senha3">
-          <input id="repassword" type="password" name="repetirSenha" placeholder="Digite a senha novamente">
-          <i class="bi bi-eye-fill" id="btn-repassword" onclick="mostrarSenha1()"></i>
+        <button class="buttonCriarConta" onclick="validarForm()">
+          Criar conta
+        </button>
+        <div class="member">
+          Já possui conta ? <a href="login.html">Faça Login</a>
         </div>
-      </form>
-      <div class="terms">
-          <input type="checkbox" id="checkbox">
-          <label for="checkbox">Concordo com os           
-            <a id="termosUso" href="./assets/Politica de uso - Viagem fácil.pdf" target="_blank" >termos de uso.</a>
-          </label>  
+        <span
+          class="clickMenuCadastre"
+          style="font-size: 30px; cursor: pointer"
+          onclick="abrirMenu()"
+          >&#9776;</span
+        >
       </div>
-      <button class="buttonCriarConta" onclick="validarForm()">Criar conta</button>
-      <div class="member">
-        Já possui conta ? <a href="login.html">Faça Login</a>
+    </section>
 
-      </div>
-      <span class="clickMenuCadastre" style="font-size:30px;cursor:pointer" onclick="abrirMenu()">&#9776;</span>
-    </div>
-  </section>
-
-  <!-- ... (código do menu oculto e scripts) ... -->
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-  <script src="main.js"></script>
-  <script>
-    $('#cpf').mask('000.000.000-00');
-    $('#number').mask('(00) 0 0000-0000');
-
-    function validarForm() {
-      var camposObrigatorios = document.querySelectorAll('.required');
-      var formValido = true;
-
-      camposObrigatorios.forEach(function(campo) {
-        if (campo.value.trim() === '') {
-          campo.classList.add('error');
-          formValido = false;
-        } else {
-          campo.classList.remove('error');
-        }
-      });
-
-      if (!formValido) {
-        alert('Preencha todos os campos obrigatórios em vermelho.');
-      } else {
-        document.getElementById('cadastroForm').submit();
-      }
-    }
-  </script>
-</body>
-
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+      $("#cpf").mask("000.000.000-00");
+      $("#number").mask("(00) 0 0000-0000");
+    </script>
+  </body>
 </html>
