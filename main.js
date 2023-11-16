@@ -55,3 +55,31 @@ function updateCarousel() {
   const offset = -currentIndex * 300; // 300px de largura para cada item
   carousel.style.transform = `translateX(${offset}px)`;
 }
+
+function fazerLogin() {
+  document.getElementById("fazerLogin").addEventListener("click", function () {
+    window.location.href = "./login.html";
+  });
+}
+
+function validarForm() {
+  var camposObrigatorios = document.querySelectorAll(".required");
+  var formValido = true;
+
+  camposObrigatorios.forEach(function (campo) {
+    if (campo.value.trim() === "") {
+      campo.classList.add("error");
+      formValido = false;
+    } else {
+      campo.classList.remove("error");
+    }
+  });
+
+  if (!formValido) {
+    alert("Preencha todos os campos obrigatórios em vermelho.");
+  } else {
+    // O formulário está válido, você pode enviar os dados ou fazer o que for necessário aqui.
+
+    alert("Formulário válido. Não há ação de envio configurada.");
+  }
+}
