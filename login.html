@@ -12,53 +12,50 @@
     <title>Acesso - Viagem Fácil</title>
     <style>
       .error {
-        border: 1px solid red;
-      }
+        border: 1px solid red;}
     </style>
   </head>
-  
-  <body class="paginaCadastro">
-          <div class="wrapper">
-        <h1>Acesse sua conta</h1>
-        <form accept="#">
-          <input id="cpf" type="text" class="required" placeholder="Seu CPF" />
-          <div class="senha">
-            <input
-              id="password"
-              type="password"
-              class="required"
-              placeholder="Senha"
-            />
-            <i
-              class="bi bi-eye-fill"
-              id="btn-password1"
-              onclick="mostrarSenha()"
-            ></i>
+    <body class="paginaCadastro">
+      <div class="cabecalho">
+        <a href="./index.html">
+          <img src="assets/Logovetorizada.svg" class="logo" />
+        </a>
+        <div class="sessaocabecalho">
+          <div class="botcabecalho">
+            <a href="./destinosMaisEscolhidos.html"
+              ><img src="assets/coracao 1.png"
+            /></a>
+            <a href="./destinosMaisEscolhidos.html">Destinos favoritos</a>
           </div>
-          <div class="recover">
-            <a href="#">Esqueceu a senha?</a>
+          <div class="botcabecalho">
+            <a href="./notification.html">
+              <img src="assets/packard-bell 1.png"
+            /></a>
+            <a href="./notification.html">Notificações</a>
           </div>
-        </form>
-        <button class="buttonCriarConta" onclick="validarForm()">
-          Acessar conta
-        </button>
-        <div class="member">
-          Não possui conta? <a href="./cadastre.html">Crie sua conta</a>
+          <div class="fazerlogin">
+            <a href="./login.html">Fazer login</a>
+          </div>
         </div>
       </div>
+     <div class="wrapper">
+         <h1>Acesse sua conta</h1>
+          <form accept="#">
+            <input id="cpf" type="text" placeholder="Seu CPF">
+             <div class="senha">
+             <input id="password" type="password" placeholder="Senha">
+              <i class="bi bi-eye-fill" id="btn-password1" onclick="mostrarSenha()"></i>
+              </div>
+              <div class="recover">
+               <a href="#">Esqueceu a senha?</a>
+              </div>
+           </form>    
+           <button class="buttonCriarConta">Acessar conta</button>
+           <div class="member">
+            Não possui conta ? <a href="./cadastre.html">Crie sua conta</a>
+           </div>
+      </div> 
     </div>
-    <span class="clickMenuCadastre" onclick="abrirMenu()">&#9776;</span>
-    <aside class="menuOculto" id="menuOculto">
-      <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()"
-        >&times</a
-      >
-      <a href="index.html">Home</a>
-      <a href="quemSomos.html">Quem Somos</a>
-      <a href="talkToUs.html">Fale Conosco</a>
-      <br />
-      <a href="login.html">Login</a>
-      <a href="cadastre.html">Cadastre-se</a>
-    </aside>
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
