@@ -55,3 +55,9 @@ function updateCarousel() {
   const offset = -currentIndex * 300; // 300px de largura para cada item
   carousel.style.transform = `translateX(${offset}px)`;
 }
+
+function fazerLogin() {
+  document.getElementById("fazerLogin").addEventListener("click", function () {
+    window.location.href = "./login.html";
+  });
+}
