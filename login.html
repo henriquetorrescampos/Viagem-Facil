@@ -10,11 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <title>Acesso - Viagem Fácil</title>
-    <style>
-      .error {
-        border: 1px solid red;}
-    </style>
-  </head>
+   </head>
     <body class="paginaCadastro">
       <div class="cabecalho">
         <a href="./index.html">
@@ -52,7 +48,7 @@
            </form>    
            <button class="buttonCriarConta">Acessar conta</button>
            <div class="member">
-            Não possui conta ? <a href="./cadastre.html">Crie sua conta</a>
+            Não possui conta ? <a href="./cadastre.html">Crie sua conta aqui.</a>
            </div>
       </div> 
     </div>
@@ -62,28 +58,5 @@
     <script>
       $("#cpf").mask("000.000.000-00");
     </script>
-    <script>
-      function validarForm() {
-        var camposObrigatorios = document.querySelectorAll(".required");
-        var formValido = true;
-
-        camposObrigatorios.forEach(function (campo) {
-          if (campo.value.trim() === "") {
-            campo.classList.add("error");
-            formValido = false;
-          } else {
-            campo.classList.remove("error");
-          }
-        });
-
-        if (!formValido) {
-          alert("Preencha todos os campos obrigatórios em vermelho.");
-        } else {
-          // O formulário está válido, você pode enviar os dados ou fazer o que for necessário aqui.
-
-          alert("Formulário válido. Não há ação de envio configurada.");
-        }
-      }
-    </script>
-  </body>
+ </body>
 </html>

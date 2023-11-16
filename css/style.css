@@ -626,3 +626,7 @@ header {
   top: 0;
   left: 20px;
 }
+
+.error {
+  border: 1px solid red;
+}
