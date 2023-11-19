@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon">
-   <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-   <title>Acesso - Viagem Fácil</title>
-  </head>
-   <body class="paginaCadastro">
-  </head>
-  <body class="telaHome"></body>
-    <header class="cabecalho">
-      <div class="logomobile">
-        <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>Acesso - Viagem Fácil</title>
+   </head>
+    <body class="paginaCadastro">
+      <div class="cabecalho">
+        <a href="./index.html">
+          <img src="assets/Logovetorizada.svg" class="logo" />
+        </a>
+        <div class="sessaocabecalho">
+          <div class="botcabecalho">
+            <a href="./destinosMaisEscolhidos.html"
+              ><img src="assets/coracao 1.png"
+            /></a>
+            <a href="./destinosMaisEscolhidos.html">Destinos favoritos</a>
+          </div>
+          <div class="botcabecalho">
+            <a href="./notification.html">
+              <img src="assets/packard-bell 1.png"
+            /></a>
+            <a href="./notification.html">Notificações</a>
+          </div>
+          <div class="fazerLogin" onclick="window.location.href='login.html'">
+            <a>Fazer Login</a>
+          </div>
+        </div>
       </div>
-      <div class="cabecalhodesk">
-      <div class="logo">
-        <a href="index.html"><img width="100px" src="assets/LOGOBRANCA.png" alt="Logo Viagem Fácil"></a> 
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quemSomos.html">Quem Somos</a></li>
-          <li><a href="talkToUs.html">Fale Conosco</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <ul>
-        <li><a href="login.html">LOGIN</a></li>
-        <li><a href="cadastre.html" class="cadastro">CADASTRO</a></li>
-        </ul>
-      </div>
-      </div>
-    </header>
-      <div class="wrapper">
-           <h1>Acesse sua conta</h1>
-           <form accept="#">
-              <input id="cpf" type="text" placeholder="Seu CPF">
-              <div class="senha">
-              <input id="password" type="password" placeholder="Senha">
+     <div class="wrapper">
+         <h1>Acesse sua conta</h1>
+          <form accept="#">
+            <input id="cpf" type="text" placeholder="Seu CPF">
+             <div class="senha">
+             <input id="password" type="password" placeholder="Senha">
               <i class="bi bi-eye-fill" id="btn-password1" onclick="mostrarSenha()"></i>
               </div>
               <div class="recover">
-                  <a href="#">Esqueceu a senha?</a>
+               <a href="#">Esqueceu a senha?</a>
               </div>
            </form>    
            <button class="buttonCriarConta">Acessar conta</button>
            <div class="member">
-                Não possui conta ? <a href="./cadastre.html">Crie sua conta</a>
+            Não possui conta ? <a href="./cadastre.html">Crie sua conta aqui.</a>
            </div>
       </div> 
-      <span class="clickMenuCadastre" onclick="abrirMenu()">&#9776;</span>
-      <aside class="menuOculto" id="menuOculto">
-        <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()">&times</a>
-        <a href="index.html">Home</a>
-        <a href="quemSomos.html">Quem Somos</a>
-        <a href="talkToUs.html">Fale Conosco</a>
-        <br>
-        <a href="login.html">Login</a>
-        <a href="cadastre.html">Cadastre-se</a>      </aside>
-<script src="main.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-      <script>
-        $('#cpf').mask('000.000.000-00');
-      </script>
-    </body>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+      $("#cpf").mask("000.000.000-00");
+    </script>
+ </body>
 </html>
