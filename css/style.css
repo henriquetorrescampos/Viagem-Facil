@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url(/Fontes/Lato-Bold\ -\ Copia.ttf) format("truetype");
+  src: url(/Fontes/) format("truetype");
   /* Outros formatos de fonte podem ser adicionados aqui */
 }
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
@@ -66,15 +66,7 @@
   background: #f5f5f5;
 }
 
-.cabecalho {
-  display: flex;
-  margin-top: 39px;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.cabecalho img {
+.header img {
   width: 127px;
   height: 99px;
 }
@@ -128,25 +120,29 @@
 
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 53px;
-  flex-shrink: 0;
+  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
 .botcabecalho a {
   text-decoration: none;
 }
 
+.main-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .cpa {
   display: flex;
   height: 343px;
+  padding: 48px 0px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 69px;
-  flex-shrink: 0;
+  align-self: stretch;
   background-color: #037ca9;
   background-image: url(/assets/imagem-input.png);
   background-position: center;
@@ -204,33 +200,25 @@ header {
   border: none;
 }
 
-.frame4 {
-  width: 100vw;
-  height: 364px;
-  flex-shrink: 0;
+.data-comemorativa img {
+  width: 273px;
+  height: 225px;
   border-radius: 10px;
-  background: #f5f5f5;
 }
-
-.frame3 {
-  width: 100vw;
-  height: 364px;
-  background-image: url(/assets/neve_canada.jpg);
-  background-repeat: no-repeat;
-  background-size: 442px 364px;
-  background-position: right;
+.data-comemorativa{
+  display: flex;
+  padding: 18px 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: #F5F5F5;
 }
-
 .text-container {
   display: flex;
+  height: 127px;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  justify-content: flex-end;
-  text-align: left;
-  padding: 40px;
-  margin-top: 5px;
-  gap: 11px;
-  max-width: calc(100% - 442px);
 }
 
 .tittle-data-comemorativa {
@@ -242,28 +230,34 @@ header {
 }
 
 .sub-data-comemorativa {
-  font-family: "Lato", sans-serif;
-  font-size: 22px;
-  font-weight: 100;
+width: 954px;
+color: #000;
+text-align: justify;
+font-family: Lato;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 .bons-destinos-1 {
   display: flex;
+  height: 384px;
+  padding: 0px 15px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 9px;
-  flex: 1 0 0;
   align-self: stretch;
 }
 
 .bons-destinos-2 {
   display: flex;
-  padding: 15px 0px;
+  padding: 45px 0px;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex: 1 0 0;
+  align-self: stretch;
 }
 
 .bons-destinos-texto {
@@ -277,9 +271,9 @@ header {
 
 .destinos {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 24px;
-  margin-top: 25px;
+  align-self: stretch;
 }
 
 .imagem-1 {
@@ -332,141 +326,126 @@ header {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  -webkit-text-stroke: 2px black;
 }
 
-.footer-home {
+.footer-home{
   display: flex;
-  height: 373px;
   padding: 6px 33px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-  background: #037ca9;
+  background: #037CA9;
 }
 
-.frame44 {
+.footer-1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1 0 0;
-  align-self: stretch;
-}
-
-.frame42 {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   align-self: stretch;
 }
 
-.frame39 {
+.footer-cima{
   display: flex;
-  align-items: flex-start;
-  gap: 122px;
+  align-items: center;
+  gap: 200px;
+  align-self: stretch;
+}
+.footer-baixo{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   flex: 1 0 0;
   align-self: stretch;
 }
 
-.frame37 {
+.footer-2{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
 }
-
-.frame37 a {
-  text-decoration: none;
-}
-
-.frame35 {
+ul{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+  list-style-type: none;
+}
+footer h1{
+  color: #FDF9F9;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 
-.frame36 {
+footer a{
+  color: #FFF;
+  text-align: center;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-3{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: flex-end;
+  align-self: stretch;
 }
-
-.frame38 {
+.footer-4{
   display: flex;
-  width: 361px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   gap: 6px;
-  align-self: stretch;
 }
 
-.frame45 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex: 1 0 0;
-  align-self: stretch;
-}
-
-.frame40 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 26px;
-  flex: 1 0 0;
-  align-self: stretch;
-}
-
-.footer-chamada {
-  color: #fdf9f9;
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration-line: underline;
-}
-
-.footer-subchamada {
-  color: #fff;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: underline;
-}
-
-.footer-chamada-final {
-  color: #fff;
+.footer-4 a{
+  color: #FFF;
   text-align: right;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-family: Lato;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-decoration-line: underline;
 }
 
-.footer-texto-final {
-  right: 50px;
-  bottom: 0px;
-  color: #fff;
-  font-family: "Lato", sans-serif;
+.logo-footer{
+  width: 128px;
+  height: 78.077px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.footer-baixo p{
+  color: #FFF;
   text-align: center;
+  font-family: Lato;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+footer img{
+width: 48px;
+height: 48px;
+}
+
+.redes-sociais{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 26px;
 }
 /* Começo da estilização da página LOGIN */
 
