@@ -200,6 +200,26 @@ header {
   border: none;
 }
 
+.suggestions-container {
+  position: flex;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+
+.suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background-color: #f0f0f0;
+}
+
 .data-comemorativa img {
   width: 273px;
   height: 225px;

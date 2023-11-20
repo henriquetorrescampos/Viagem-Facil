@@ -14,11 +14,6 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
-    <script src="./main.js"></script>
     <title>Acesso - Viagem Fácil</title>
   </head>
   <body>
@@ -69,10 +64,8 @@
           <p class="tittle">VOCÊ ESCOLHE O DESTINO</p>
           <p class="sub">NÓS CRIAMOS O ROTEIRO DOS SONHOS</p>
         </div>
-        <input
-          type="search"
-          placeholder="Insira uma cidade e seu país correspondente."
-        />
+        <input type="search" id="searchInput" placeholder="Insira uma cidade e seu país correspondente.">
+        <div class="suggestions-container" id="suggestionsContainer"></div>
       </div>
       <div class="data-comemorativa">
         <div class="text-container">
@@ -137,7 +130,7 @@
           </div>
           <div class="footer-3">
             <div class="footer-4">
-              <a>Termos de Uso<a>
+              <a id="termosdeuso">Termos de Uso<a>
               <a>Politica de privacidade e cookies</a>
               <a>Permissão para instalação de cookies</a>
               <a>Mapa do site</a>
@@ -156,5 +149,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
