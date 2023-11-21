@@ -14,37 +14,31 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
-    <script src="./main.js"></script>
     <title>Acesso - Viagem Fácil</title>
   </head>
   <body>
     <header>
-      <div class="cabecalho">
-        <a href="./index.html">
-          <img src="assets/Logovetorizada.svg" class="logo" />
-        </a>
-        <div class="sessaocabecalho">
-          <div class="botcabecalho">
-            <a href="./destinosMaisEscolhidos.html"
-              ><img src="assets/coracao 1.png"
-            /></a>
-            <a href="./destinosMaisEscolhidos.html">Destinos favoritos</a>
-          </div>
-          <div class="botcabecalho">
-            <a href="./notification.html">
-              <img src="assets/packard-bell 1.png"
-            /></a>
-            <a href="./notification.html">Notificações</a>
-          </div>
-          <div class="fazerLogin" onclick="window.location.href='login.html'">
-            <a>Fazer Login</a>
-          </div>
+      <a href="./index.html">
+        <img src="assets/Logovetorizada.svg" class="logo" /></a>
+      <div class="sessaocabecalho">
+        <div class="botcabecalho">
+          <a href="./destinosMaisEscolhidos.html"
+            ><img src="assets/coracao 1.png"
+          /></a>
+          <a href="./destinosMaisEscolhidos.html">Destinos favoritos</a>
+        </div>
+        <div class="botcabecalho">
+          <a href="./notification.html">
+            <img src="assets/packard-bell 1.png"
+          /></a>
+          <a href="./notification.html">Notificações</a>
+        </div>
+        <div class="fazerLogin" onclick="window.location.href='login.html'">
+          <a>Fazer Login</a>
         </div>
       </div>
+    </header>
+    <main class="main-home">
       <div class="gbotoes">
         <div class="botao" onclick="redirectToLink('https://www.google.com')">
           <div class="contbotao">
@@ -65,34 +59,27 @@
           </div>
         </div>
       </div>
-    </header>
-    <main class="main-home">
       <div class="cpa">
         <div class="chamada">
           <p class="tittle">VOCÊ ESCOLHE O DESTINO</p>
           <p class="sub">NÓS CRIAMOS O ROTEIRO DOS SONHOS</p>
         </div>
-        <input
-          type="search"
-          placeholder="Insira uma cidade e seu país correspondente."
-        />
+        <input type="search" id="searchInput" placeholder="Insira uma cidade e seu país correspondente.">
+        <div class="suggestions-container" id="suggestionsContainer"></div>
       </div>
       <div class="data-comemorativa">
-        <div class="frame4">
-          <div class="frame3">
-            <div class="text-container">
-              <p class="tittle-data-comemorativa">
-                Desfrute do Réveillon com Roteiros Personalizados e Velozes
-              </p>
-              <p class="sub-data-comemorativa">
-                Deixe o nosso sistema inteligente criar um roteiro sob medida
-                para a sua celebração de Réveillon. Em apenas alguns minutos,
-                considerando suas preferências e interesses, você terá um
-                itinerário completo.
-              </p>
-            </div>
-          </div>
+        <div class="text-container">
+          <p class="tittle-data-comemorativa">
+            Desfrute do Réveillon com Roteiros Personalizados e Velozes
+          </p>
+          <p class="sub-data-comemorativa">
+            Deixe o nosso sistema inteligente criar um roteiro sob medida
+            para a sua celebração de Réveillon. Em apenas alguns minutos,
+            considerando suas preferências e interesses, você terá um
+            itinerário completo.
+          </p>
         </div>
+        <img src="/assets/neve_canada.jpg">
       </div>
       <div class="bons-destinos-1">
         <div class="bons-destinos-2">
@@ -117,67 +104,53 @@
       </div>
     </main>
     <footer class="footer-home">
-      <div class="frame44">
-        <div class="frame42">
-          <div class="frame39">
-            <div class="frame37">
-              <p class="footer-chamada">Baixe o aplicativo</p>
-              <a href=""
-                ><p class="footer-subchamada">Aplicativo para Android</p></a
-              >
-              <a href="">
-                <p class="footer-subchamada">Aplicativo para Iphone</p>
-              </a>
-            </div>
-            <div class="frame35">
-              <a href=""><p class="footer-chamada">Sobre o Viagem Fácil</p></a>
-              <a href=""><p class="footer-subchamada">Quem somos</p></a>
-              <a href=""><p class="footer-subchamada">Fale Conosco</p></a>
-            </div>
-            <div class="frame36">
-              <a href=""> <p class="footer-chamada">Explorar</p></a>
-              <a href=""> <p class="footer-subchamada">Avalie-nos</p></a>
-              <a href=""> <p class="footer-subchamada">Inclua o destino</p></a>
-              <a href=""> <p class="footer-subchamada">Cadastra-se</p></a>
-              <a href="">
-                <p class="footer-subchamada">Escolha dos viajantes</p></a
-              >
-              <a href="">
-                <p class="footer-subchamada">Sustentabilidade ambiental</p></a
-              >
-              <a href=""> <p class="footer-subchamada">Suporte central</p></a>
-              <a href="">
-                <p class="footer-subchamada">Leia artigos de viagem</p>
-              </a>
-            </div>
+      <div class="footer-1">
+        <div class="footer-cima">
+          <div class="footer-2">
+            <ul class="Baixe-o-aplicativo">
+              <li><h1> Baixe o aplicativo</h1></li>
+              <li><a>Aplicativo para androide</a></li>
+             <li><a>Aplicativo para iphone</a></li>
+            </ul>
+            <ul>
+              <li><h1>Sobre o Viagem Fácil</h1></li>
+              <li><a>Quem somos</a></li>
+              <li><a>Fale conosco</a></li>
+            </ul>
+            <ul>
+              <li><h1>Explorar</h1></li>
+              <li><a>Avalie-nos</a></li>
+              <li><a>Inclua o destino</a></li>
+              <li><a>Cadastre-se</a></li>
+              <li><a>Escolha dos viajantes</a></li>
+              <li><a>Sustemtabilidade Ambiental</a></li>
+              <li><a>Suporte Central</a></li>
+              <li><a>Leia artigos de Viagem</a></li>
+            </ul>
           </div>
-          <div class="frame38">
-            <a href=""> <p class="footer-chamada-final">Termos de uso</p></a>
-            <a href="">
-              <p class="footer-chamada-final">Política de privacidade</p></a
-            >
-            <a href="">
-              <p class="footer-chamada-final">
-                Permissão para instalação de cookies
-              </p>
-            </a>
-            <a href=""> <p class="footer-chamada-final">Mapa do site</p></a>
-            <a href="">
-              <p class="footer-chamada-final">Como o site funciona</p>
-            </a>
-            <a href="">
-              <p class="footer-chamada-final">Fale Conosco</p>
-            </a>
+          <div class="footer-3">
+            <div class="footer-4">
+              <a id="termosdeuso">Termos de Uso<a>
+              <a>Politica de privacidade e cookies</a>
+              <a>Permissão para instalação de cookies</a>
+              <a>Mapa do site</a>
+              <a>Como o sistema funciona</a>
+            </div>
           </div>
         </div>
-        <div class="frame45">
-          <div class="frame40">
-            <p class="footer-texto-final">
-              © 2023 Viagem Fácil LLC Todos os direitos reservados.
-            </p>
+        <div class="footer-baixo">
+          <a href="./index.html">
+           <img src="/assets/LOGOBRANCA.svg" class="logo-footer">
+          </a>
+          <p>© 2023 Viagem Fácil LLC Todos os direitos reservados.</p>
+          <div class="redes-sociais">
+            <img src="/assets/X.svg">
+            <img src="/assets/INSTA.svg">
+            <img src="/assets/FACE.svg">
           </div>
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
