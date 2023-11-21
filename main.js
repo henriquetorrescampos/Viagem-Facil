@@ -22,14 +22,6 @@ function mostrarSenha1() {
     btnShowPass.classList.replace("bi-eye-slash-fill", "bi-eye-fill");
   }
 }
-function abrirMenu() {
-  document.getElementById("menuOculto").style.width = "150px";
-  document.getElementById("paginaCadastro").style.marginLeft = "150px";
-}
-function fecharMenu() {
-  document.getElementById("menuOculto").style.width = "0";
-  document.getElementById("paginaCadastro").style.marginLeft = "0";
-}
 
 function updateCarousel() {
   const offset = -currentIndex * 300; // 300px de largura para cada item
@@ -65,34 +57,35 @@ function validarForm() {
 }
 
 // Obtém o elemento de input com o id 'searchInput'
-const searchInput = document.getElementById('searchInput');
+const searchInput = document.getElementById("searchInput");
 
 // Obtém o elemento de container de sugestões com o id 'suggestionsContainer'
-const suggestionsContainer = document.getElementById('suggestionsContainer');
+const suggestionsContainer = document.getElementById("suggestionsContainer");
 
 // Dados fictícios para sugestões
-const suggestions = ['Orlando', 'Osasco', 'Orleans', 'Ouro preto'];
+const suggestions = ["Orlando", "Osasco", "Orleans", "Ouro preto"];
 
 // Adiciona um ouvinte de evento para mudanças no input
-searchInput.addEventListener('input', function() {
+searchInput.addEventListener("input", function () {
   // Obtém o valor do input em letras minúsculas
   const inputValue = this.value.toLowerCase();
 
   // Filtra as sugestões com base no valor do input
-  const filteredSuggestions = suggestions.filter(suggestion =>
+  const filteredSuggestions = suggestions.filter((suggestion) =>
     suggestion.toLowerCase().includes(inputValue)
   );
 
   // Chama a função para exibir as sugestões filtradas
   exibirSugestoes(filteredSuggestions);
-  if (inputValue === '') {
-    suggestionsContainer.style.display = 'none';
-}});
+  if (inputValue === "") {
+    suggestionsContainer.style.display = "none";
+  }
+});
 
 // Adiciona um ouvinte de evento para cliques nas sugestões
-suggestionsContainer.addEventListener('click', function(event) {
+suggestionsContainer.addEventListener("click", function (event) {
   // Verifica se o elemento clicado é uma sugestão
-  if (event.target.classList.contains('suggestion')) {
+  if (event.target.classList.contains("suggestion")) {
     // Obtém o texto da sugestão clicada
     const selectedSuggestion = event.target.innerText;
 
@@ -106,16 +99,16 @@ function exibirSugestoes(sugestoes) {
   // Verifica se há sugestões a serem exibidas
   if (sugestoes.length > 0) {
     // Cria o HTML para as sugestões filtradas
-    const sugestoesHTML = sugestoes.map(sugestao =>
-      `<div class="suggestion">${sugestao}</div>`
-    ).join('');
+    const sugestoesHTML = sugestoes
+      .map((sugestao) => `<div class="suggestion">${sugestao}</div>`)
+      .join("");
 
     // Atualiza o conteúdo do container de sugestões e exibe o container
     suggestionsContainer.innerHTML = sugestoesHTML;
-    suggestionsContainer.style.display = 'block';
+    suggestionsContainer.style.display = "block";
   } else {
     // Se não houver sugestões, limpa o conteúdo e oculta o container
-    suggestionsContainer.innerHTML = '';
-    suggestionsContainer.style.display = 'none';
+    suggestionsContainer.innerHTML = "";
+    suggestionsContainer.style.display = "none";
   }
 }
