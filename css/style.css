@@ -2,6 +2,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: "Lato";
 }
 
 @font-face {
@@ -40,7 +41,6 @@
   display: inline;
   color: #000;
   text-align: center;
-  font-family: Lato;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -179,7 +179,6 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  font-family: "Lato", sans-serif;
 }
 
 .cpa input {
@@ -629,4 +628,237 @@ header {
 
 .error {
   border: 1px solid red;
+}
+
+.tittleRoteiro {
+  display: flex;
+  padding: 48px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  background-color: #037ca9;
+}
+
+.tittleRoteiro p {
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tittle-roteiro-texto {
+  font-size: 40px;
+}
+
+.subtittle-roteiro-texto {
+  font-size: 32px;
+}
+
+.resumoRoteiro {
+  display: flex;
+  padding: 27px 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: #f5f5f5;
+  background-image: url(/assets/orlando_imagem.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position: 60%;
+}
+
+.resumo-roteiro-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.titulo-destino {
+  color: #037ca9;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.descricao-destino {
+  color: #000;
+  text-align: justify;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 720px;
+}
+
+.dica-viagem-roteiro {
+  display: flex;
+  padding: 10px 100px 10px 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.texto-dica-viagem-roteiro2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 10px;
+}
+
+.dicas-lista-bullet {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px;
+  position: initial;
+}
+
+.seu-roteiro {
+  display: flex;
+  padding: 15px 150px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  align-self: stretch;
+}
+
+.container-seu-roteiro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  align-self: stretch;
+  border-radius: 10px;
+  border: 10px solid #037ca9;
+  background: #e8f9ff;
+}
+
+.dias-seu-roteiro {
+  display: flex;
+  padding: 20px 62px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 10px 10px 0px 0px;
+  background: #037ca9;
+}
+
+.dia-especifico-roteiro {
+  display: flex;
+  padding: 7px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fff;
+  color: #037ca9;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.seu-roteiro-info {
+  display: flex;
+  padding: 15px 30px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.seu-roteiro-obs {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.seu-roteiro-obs p {
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.seu-roteiro-rotina {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0px;
+  align-items: center;
+  align-self: stretch;
+  margin-left: 40px;
+}
+
+.seu-roteiro-rotina2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 33px;
+}
+
+.botao-avancar-roteiro {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 9px;
+  background: #037ca9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dia-roteiro-seguinte {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.download-roteiro {
+  display: flex;
+  padding: 5px 150px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.download-texto {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px;
+}
+
+.download-roteiro-pdf {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  border-radius: 9px;
+  background: #037ca9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+
+.download-roteiro-pdf p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
